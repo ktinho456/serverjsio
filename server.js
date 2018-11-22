@@ -4,7 +4,9 @@ const express = require('express');
 const socketIO = require('socket.io');
 const path = require('path');
 
-const PORT = process.env.PORT || 8000;
+
+var io = require('socket.io').listen(8000);
+/////const PORT = process.env.PORT || 8000;
 const INDEX = path.join(__dirname, 'index.html');
 
 const server = express()
